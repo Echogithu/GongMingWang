@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>共鸣网2.0</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <meta name="description" content="东莞理工学院莞工青年论坛共鸣网">
+    <meta name="author" content="东莞理工学院莞青7.0技术组">
+    <meta name="keywords" content="东莞理工学院 莞工青年论坛 共鸣网">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/nav.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/讲座详情页.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar-default navbar-fixed-top navStyle" role="navigation">
+            <div class="container">
+                <!-- 移动端导航栏 -->
+                <div class="phoneNav visible-xs">
+                    <!-- 左侧三线导航按钮 -->
+                    <div class="navToggle">
+                        <i class="iconfont icon-mianbaoxiedaohangxiaoxian"></i>
+                    </div>
+                    <!-- phone logo -->
+                    <a href="#" class="logo">
+                        <img src="images/nav/logo.png">
+                    </a>
+                    <!-- 移动端搜索按钮 -->
+                    <div class="phoneSearch">
+                        <i class="search iconfont icon-fangdajing"></i>
+                    </div>
+                </div>
+                <!-- END-移动端导航栏 -->
+                <!-- pc、pad端导航栏 -->
+                <!-- PC、pad公用logo -->
+                <div class="PCNav">
+                    <a href="#" class="logo hidden-xs">
+                        <img src="images/nav/logo.png">
+                    </a>
+                    <div class="collapse navbar-collapse hidden-xs" id="navbar-menu">
+                        <ul class="nav navbar-nav navList ">
+                            <li><a href="#">首页</a></li>
+                            <li class="hoverDropDown">
+                                <a href="#">视频</a>
+                                <ul class="dropdownMenu">
+                                    <li data-num="1">
+                                        <a href="#"><img src="images/nav/1i.png">讲座现场</a>
+                                    </li>
+                                    <li data-num="2">
+                                        <a href="#"><img src="images/nav/2i.jpg">精彩回顾</a>
+                                    </li>
+                                    <li data-num="3">
+                                        <a href="#"><img src="images/nav/3i.png">莞青杂烩</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li  class="active"><a href="#">资讯</a></li>
+                            <li><a href="#">栏目</a></li>
+                        </ul>
+                        <ul class="rightNav">
+                            <li>
+                                <i class="search iconfont icon-fangdajing"></i>
+                            </li>
+                            <li><a href="#">登录</a><span>|</span></li>
+                            <li><a href="#">注册</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- END-pc、pad端导航栏 -->
+                <!-- 搜索弹出框 -->
+                <div class="searchForm PCSeachForm">
+                    <form class="input-group">
+                        <span class="input-group-addon closeBtn">×</span>
+                        <input type="text" placeholder="搜索讲座主题、期数、嘉宾...">
+                        <span class="input-group-addon hidden-xs">
+                            <i class="search iconfont icon-fangdajing"></i>
+                        </span>
+                        <ul class="droptip">
+                            <li><span>热门搜索</span></li>
+                            <li><a href="">hello</a></li>
+                            <li><a href="">hello</a></li>
+                            <li><a href="">hello</a></li>
+                            <li><a href="">hello</a></li>
+                        </ul>
+                    </form>
+                </div>
+                <!-- END-搜索弹出框 -->
+            </div>
+            <!-- END-container -->
+        </nav>
+        <!-- 面包屑导航栏-phone端-底部 -->
+        <nav class="visible-xs">
+            <ul class="breadNav">
+                <li class="breadList active">
+                    <a href="#">
+                        <i class="iconfont icon-shouye"></i>
+                        <p>首页</p>
+                    </a>
+                </li>
+                <li class="breadList">
+                    <a href="#videoZone">
+                        <i class="iconfont icon-shipinwenjian"></i>
+                        <p>视频</p>
+                    </a>
+                </li>
+                <li class="breadList">
+                    <a href="#informationZone">
+                        <i class="iconfont icon-xinxi"></i>
+                        <p>资讯</p>
+                    </a>
+                </li>
+                <li class="breadList">
+                    <a href="#columnZone">
+                        <i class="iconfont icon-lanmusousuo"></i>
+                        <p>栏目</p>
+                    </a>
+                </li>
+                <li class="breadList">
+                    <a href="">
+                        <i class="iconfont icon-yonghu1"></i>
+                        <p>用户</p>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+	<!--详情信息部分-->
+	<div class="mycontainer2">
+		<!--当前导航-->
+		<div class="row">
+			<!--导航-->
+			<div class="col-xs-10 nav-padding">
+				<ul class="list-inline">
+                    <li><a href="#">首页</a></li>
+                    <li><span class="glyphicon glyphicon-menu-right"></span></li>
+                    <li><a href="#">资讯</a></li>
+                    <li><span class="glyphicon glyphicon-menu-right"></span></li>
+                    <li><a href="#">讲座回顾</a></li>
+                    <li><span class="glyphicon glyphicon-menu-right"></span></li>
+                    <li class="nav-text"><a href="#">梁俊：歌里藏着的，是一个又一个的生命故事</a></li>
+				</ul>
+			</div>
+			<!--分享链接-->
+			<div class="col-xs-2 share-pic">
+				<span><a href="#"><img src="images/huigu/qq.png" class="pull-right share-img"></a></span>
+				<span><a href="#"><img src="images/huigu/weibo.png" class="pull-right share-img"></a></span>
+				<span><a href="#"><img src="images/huigu/weixin.png" class="pull-right share-img"></a></span>
+			</div>
+		</div>
+		<!--正文一-->
+		<div class="row pic-text1 mycontent">
+			<!--图片及文字-->
+			<div class="col-xs-12 mycontent-left col-sm-7">
+				<div class="title-text">梁俊：歌里藏着的，是一个又一个的生命故事</div>
+				<div class="peoples">
+					责任编辑：菜籽&nbsp&nbsp&nbsp&nbsp节目编导：吕丁胜&nbsp&nbsp&nbsp&nbsp布场设计：招静雨&nbsp&nbsp&nbsp&nbsp摄影师：莫彩凤、薛珊
+				</div>
+				<div class="time">2018-05-12</div>
+				<div>
+					<div class="thumbnail mypic">
+                        <img src="images/huigu/pic1.jpg" alt="pic">
+                        <div class="caption padding-none">
+                            <blockquote class="pic-blockquote">
+                                <p>用吉他教语文的老师</p>
+                                <p>用民谣音乐方式给古诗文谱曲</p>
+                                <p>大山深处的诗性教育者</p>
+                                <p>歌曲《苔》的谱曲者</p>
+                            </blockquote>
+                        </div>
+					</div>
+				</div>
+			</div>
+			<!--更多资讯-->
+			<div class="col-sm-5 padding-right-none margin-top margin-top-down hidden-xs a" >
+				<div class="more-message col-xs-7 pull-right">
+					<h4>更多资讯</h4>
+					<div class="row">
+						<!--文字区域-->
+						<div class="col-xs-9 more-message-text">
+							<a href="#">
+								<p>建党97周年</p>
+								<p>不忘初心，牢记使命</p>
+								<p>2018-7-1</p>
+							</a>
+						</div>
+						<!--图片区域-->
+						<div class="col-xs-3 small-pic">
+							<img src="images/huigu/more-message1.jpg" alt="pic">
+						</div>
+					</div>
+					<div class="row">
+						<!--文字区域-->
+						<div class="col-xs-9 more-message-text">
+							<a href="#">
+								<p>半夏已至</p>
+								<p>我知道该毕业了</p>
+								<p>2018-6-22</p>
+							</a>
+						</div>
+						<!--图片区域-->
+						<div class="col-xs-3 small-pic">
+							<img src="images/huigu/more-message2.jpg" alt="pic">
+						</div>
+					</div>
+					<div class="row">
+                        <!--文字区域-->
+						<div class="col-xs-9 more-message-text">
+							<a href="#">
+								<p>挑战杯回顾</p>
+								<p>荣耀青春，落子无悔</p>
+								<p>2018-6-10</p>
+							</a>
+						</div>
+						<!--图片区域-->
+						<div class="col-xs-3 small-pic">
+							<img src="images/huigu/more-message3.jpg" alt="pic">
+						</div>
+					</div>
+					<div class="row">
+						<!--文字区域-->
+						<div class="col-xs-9 more-message-text">
+							<a href="#">
+								<p>见面会</p>
+								<p>候鸟盼花开，终赴莞青来</p>
+								<p>2018-5-9</p>
+							</a>
+						</div>
+						<!--图片区域-->
+						<div class="col-xs-3 small-pic">
+							<img src="images/huigu/more-message4.jpg" alt="pic">
+						</div>
+					</div>
+					<!--查看更多-->
+					<div class="row see-more">
+						<div class="col-xs-12">
+							<a href="#">查看更多</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--正文二-->
+		<div class="row pic-text2">
+			<!--文字1-->
+			<div class="col-xs-12 text padding-right-none col-sm-9">
+				<p>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2018年5月11日晚，《莞工青年论坛》第124期讲座如期在东莞理工学院莞城校区小剧场举行。本次讲座我们有幸邀请到梁俊老师与我们分享他和孩子们唱过的歌以及他们一起完成的生命故事。
+				</p>
+			</div>
+			<!--图片-->
+			<div class="col-xs-12 padding-right-none mycontent">
+				<div class="col-sm-9 col-xs-12 padding-left-none padding-right-6 mycontent-left">
+					<img src="images/huigu/pic2.jpg" alt="pic" class="img-responsive3">
+				</div>
+				<!--更多资讯-->
+				<div class="col-sm-3 padding-right-none margin-top hidden-xs">
+					<div class="more-message col-xs-12 pull-right">
+						<h4>更多资讯</h4>
+						<div class="row">
+							<!--文字区域-->
+							<div class="col-xs-9 more-message-text">
+								<a href="#">
+									<p>建党97周年</p>
+									<p>不忘初心，牢记使命</p>
+									<p>2018-7-1</p>
+								</a>
+							</div>
+							<!--图片区域-->
+							<div class="col-xs-3 small-pic">
+								<img src="images/huigu/more-message1.jpg" alt="pic">
+							</div>
+						</div>
+						<div class="row">
+							<!--文字区域-->
+							<div class="col-xs-9 more-message-text">
+								<a href="#">
+									<p>半夏已至</p>
+									<p>我知道该毕业了</p>
+									<p>2018-6-22</p>
+								</a>
+							</div>
+							<!--图片区域-->
+							<div class="col-xs-3 small-pic">
+								<img src="images/huigu/more-message2.jpg" alt="pic">
+							</div>
+						</div>
+						<div class="row">
+	                        <!--文字区域-->
+							<div class="col-xs-9 more-message-text">
+								<a href="#">
+									<p>挑战杯回顾</p>
+									<p>荣耀青春，落子无悔</p>
+									<p>2018-6-10</p>
+								</a>
+							</div>
+							<!--图片区域-->
+							<div class="col-xs-3 small-pic">
+								<img src="images/huigu/more-message3.jpg" alt="pic">
+							</div>
+						</div>
+						<div class="row">
+							<!--文字区域-->
+							<div class="col-xs-9 more-message-text">
+								<a href="#">
+									<p>见面会</p>
+									<p>候鸟盼花开，终赴莞青来</p>
+									<p>2018-5-9</p>
+								</a>
+							</div>
+							<!--图片区域-->
+							<div class="col-xs-3 small-pic">
+								<img src="images/huigu/more-message4.jpg" alt="pic">
+							</div>
+						</div>
+						<!--查看更多-->
+						<div class="row see-more">
+							<div class="col-xs-12">
+								<a href="#">查看更多</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--文字2-->
+			<div class="col-sm-9 col-xs-12 text padding-right-none">
+				<p>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;讲座伊始，梁俊老师用诗歌向我们述说了乌蒙山的历史。四千多年前，苗族的祖先为躲避战乱，多次迁徙。最后，他们来到了山高雾大，天气寒冷，同时与世隔绝的贵州威宁石门坎乌蒙山区。
+				</p>
+			</div>
+			<!--文字3-->
+			<div class="col-xs-12 ">
+				<blockquote>
+					<p>苗族古歌/节选</p>
+					<p>我们这支苗族啊<br>是从战火中走过来的<br>但因为敌人太强大<br>所以我们只得<br>东跑西颠</p>  
+					<p>最后，我们只好把丢失的<br>房屋兵器秀在披肩上（原文："秀"）<br>把走过的江河湖泊<br>与秀丽风光秀在裙子上</p>
+				</blockquote>
+			</div>
+		</div>
+		<!--正文三-->
+		<div class="row pic-text3">
+			<!--文字1-->
+			<div class="col-sm-9 col-xs-12 padding-right-none">
+				<h4>用生命去影响生命</h4>
+				<p>
+					&nbsp;&nbsp;&nbsp;&nbsp;直到一百多年前，这里发生了一个奇迹。
+				</p>
+				<p>
+					&nbsp;&nbsp;&nbsp;&nbsp;一群老师来到了乌蒙山，他们用四十年的时间建起了96所小学，让这里的孩子可以走入学校读书。几十年间，这里来了很多老师、医学家、社会学家、音乐家......其中包括后来云贵川三省交界地区著名教育家——朱焕章。
+				</p>
+				<p>
+					&nbsp;&nbsp;&nbsp;&nbsp;当时的国民政府邀请朱焕章去教育部担任教育部部长，但他毅然回到贵州威宁石门坎从事苗族教育工作。因为在这里，他也曾经被他的老师爱过。
+				</p>
+				<p>
+					&nbsp;&nbsp;&nbsp;&nbsp;是爱的力量在在这片土地上产生了巨大的奇迹；是爱的力量，让一个民族，从自卑走向自信，从愚昧走向文明；让爱和陪伴让这些前仆后继的人，用他们的生命去影响生命。
+				</p>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;所以梁俊老师做了一个决定：去探索这种力量。</p>
+			</div>
+			<!--文字2-->
+			<div class="col-sm-9 col-xs-12  padding-right-none">
+				<h4>真正的贫穷其实是内心</h4>
+				<p>
+				     &nbsp;&nbsp;&nbsp;&nbsp;乌蒙山位于贵州接近川滇最边缘的西北，僻静苦寒，是中国最贫困的地方之一。生活在这里的人们，常年被大雾笼罩，而且不得不忍受跳蚤的叮咬。
+				</p>
+				<p>
+					&nbsp;&nbsp;&nbsp;&nbsp;但让梁俊老师苦恼的并不是这些，而是发生在这里的一些不幸——酗酒的父亲、离家的少女以及许许多多的留守儿童......隔绝的环境留下的不仅仅是贫穷，更将怯懦、胆小、自卑烙在了孩子们的心中
+				</p>
+			</div>
+			<!--文字3-->
+			<div class="col-sm-9 col-xs-12 padding-right-none">
+				<h4>流淌着诗的血液</h4>
+				<p>
+				     &nbsp;&nbsp;&nbsp;&nbsp;关于这个民族有很多悲惨的故事。但是当你听到他们的歌声，看到他们写的诗，你就会觉得，这个民族很「特别」。你就会发现，他们的状态变得很自信很耀眼。
+				</p>
+				<p>
+					&nbsp;&nbsp;&nbsp;&nbsp;为了接近这些胆怯的孩子，课余时间梁俊老师会拿上他的吉他，将诗歌谱成曲然后和孩子们一起吟唱。
+				</p>
+			</div>
+			<!--图片-->
+			<div class="col-sm-9 col-xs-12 padding-right-none">
+				<img src="images/huigu/pic3.jpg" alt="pic" class="img-responsive3">
+			</div>
+			<!--文字4-->
+			<div class="col-sm-9 col-xs-12 padding-right-none">
+			     <p>
+			     	&nbsp;&nbsp;&nbsp;&nbsp;唱歌让梁俊老师慢慢地走近了孩子们的内心，并和他们成为了朋友。唱歌也让孩子们慢慢地走出了自卑，变得更加坚定。这些细小的改编，慢慢地改变了孩子的生命。
+			     </p>
+			</div>
+		</div>
+		<!--正文四-->
+		<div class="row pic-text4">
+			<div class="col-sm-9 col-xs-12 padding-right-none">
+				<!--标题-->
+				<h4>每个孩子生命中都有一首诗</h4>
+				<!--文字1-->
+				<p>
+					&nbsp;&nbsp;&nbsp;&nbsp;有一天梁俊老师给孩子们布置了一个题目：什么东西是看不见也摸不着的？一个情窦初开的小男孩写了这样的一首诗：
+				</p>
+				<!--文字2-->
+				<blockquote>
+					<p>
+						爱和风<br>作者：朱思语<br><br>爱，当爱之锁开了<br>就很难关住<br>那爱就像魔鬼<br> 深深地抓住你的心<br>让你爱吧，爱吧<br>风，就像梦一样<br>你想把她抱住<br>可她还是去了<br>你看不见她<br>她却可以穿过你
+					</p>
+				</blockquote>
+				<!--文字3-->
+				<p>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;梁俊老师认为，只要有足够的关心和教育，就能激发孩子们心中的潜能，其实每个孩子生命中都有一首诗。
+				</p>
+				<!--文字4-->
+				<p>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;后来孩子们也开始自发地用诗歌去记录生活。有孩子在诗里提到了尊严。尊严是什么？对于每个人来说可能有所不同。但是对于孩子们来说，他们的尊严就是得到别人的肯定，而这样的肯定能够支撑起一个人的生命。
+				</p>
+				<!--文字5-->
+				<blockquote>
+					<p>
+						蒲公英的精灵/节选<br>作者：梁越梅<br><br>那金光是那金闪闪的蒲公英花<br>在哪角落里<br>得到了尊严
+					</p>
+				</blockquote>
+				<!--文字6-->
+				<p>
+				    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;正如梁俊老师所说的：“学唱古诗，学语文，最终学习的，是如何寻找生命的价值。”
+				</p>
+				<!--文字7-->
+				<p>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;生命和诗歌的相遇，产生了神奇的「化学反应」。而这些歌里，藏着的，是一个又一个的生命故事。
+				</p>
+				<!--图片-->
+				<img src="images/huigu/pic4.jpg" alt="pic" class="img-responsive3">
+				<!--文字8-->
+				<p>
+			       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;最后，《莞工青年论坛》办公室主任黄泽鑫为嘉宾送上精心制作的相框作为纪念。至此，本次讲座圆满结束。
+				</p>
+			</div>
+		</div>
+		<!--提问精选-->
+		<div class="row good-ask-answer">
+			<div class="col-sm-9 col-xs-12 padding-right-none">
+				<div class="good-ask">
+					<blockquote>提问精选</blockquote>
+					<div class="ask-answer">
+						<h4>问：寻找的过程重要还是结果重要？</h4>
+						<p class="answer">
+							答：结果是不可控制的，但是「去做」这件事情是可控的，所以只要你稍微的坚持一下，你能把握过程，
+						</p>
+						<h4>问：支教，我们能<br>带给孩子什么？</h4>
+						<p class="answer">
+							答：支教前一定要做好两方面的准备。第一方面是精神层面的准备，我们需要了解儿童的心理状态，以及自己的心里状态，要有一定的自我认知以及对孩子的认知。
+						</p>
+						<h4>问：如何看待离别？</h4>
+						<p class="answer">
+							 答：其实在刚开始上课的时候，我就跟孩子们说，离别是人生的常态。在我离开石门坎的时候，孩子们是笑嘻嘻的跟我说再见的，他们知道我走了，还会再来。
+						</p>
+						<p>
+							我做了一个梦<br>梦见老师坐车走了<br>天上的星星跟着车到了重庆<br>星星的眼泪就掉了下来<br>——孩子写给梁俊老师的离别诗（大意）
+						</p>
+						<p>你大可以把它当成一件有意思的事，离别不一定只有眼泪，离别不一定就是伤害，离别也会带来别样的刚才美。</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--评论框-->
+		<div class="row">
+			<div class="col-sm-9 col-xs-12">
+				<!--输入框-->
+				<div class="input">
+					<!--标题-->
+					<blockquote>评论<span class="title-comment">(2)</span></blockquote>
+					<!--输入框与发布-->
+					<div class="inputarea">
+						<form>
+							<!--输入框-->
+                            <textarea class="form-control" placeholder="我来说两句..." id="inputText"></textarea>
+							<!--显示字数-->
+							<span class="word-number"><span>0</span>/140</span>
+							<!--发布-->
+							<div class="inputarea-submit">
+								<div class="submit">
+									发布
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--评论区域-->
+		<div class="row">
+			<div class="col-sm-9 col-xs-12">
+				<div class="showcomment">
+					<blockquote>互动</blockquote>
+					<!--媒体列表-->
+					<ul class="media-list">
+						<li class="media">
+							<!--头像-->
+							<div class="media-left media-head">
+								<a href="#"><img src="images/huigu/head1.png" alt="head" class="media-object"></a>
+							</div>
+							<!--文字-->
+							<div class="media-body">
+								<!--昵称-->
+								<h4 class="media-heading media-name"><a href="#">跋涉</a><span>05-20</span></h4>
+								<!--评论-->
+								<p>不知道为什么，唱苔的时候眼圈竟然泛红了，一种由心的感动，这种质朴的爱深深地打动了我的心</p>
+							</div>
+							<!--点赞评论-->
+							<div class="comment-up">
+								<!--点赞-->
+								<span><a class="myup"><img src="images/huigu/dianzan.jpg" alt="thumb-up"></a><span class="up-text">点赞</span><span class="up-number">99</span></span>
+								<!--评论-->
+								<span><a href="#"><img src="images/huigu/comment.jpg" alt="comment"></a><span>评论</span><span class="comment-number">2</span></span>
+							</div>
+						</li>
+						<li class="media">
+							<!--头像-->
+							<div class="media-left media-head">
+								<a href="#"><img src="images/huigu/head2.png" alt="head" class="media-object"></a>
+							</div>
+							<!--文字-->
+							<div class="media-body">
+								<!--昵称-->
+								<h4 class="media-heading media-name"><a href="#">Wposion</a><span>05-20</span></h4>
+								<!--评论-->
+								<p>导语很棒</p>
+							</div>
+							<!--点赞评论-->
+							<div class="comment-up">
+								<!--点赞-->
+								<span><a class="myup"><img src="images/huigu/dianzan.jpg" alt="thumb-up"></a><span class="up-text">点赞</span><span class="up-number">99</span></span>
+								<!--评论-->
+								<span><a href="#"><img src="images/huigu/comment.jpg" alt="thumb-up"></a><span>评论</span><span>2</span></span>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+        </div>
+		<!-- 二维码Begin -->
+        <div class="container visible-lg hiddden-xs">
+            <div class="toTop">
+                <div class="weibo">
+                    <img src="images/footer/微博_二维码.png" class="img-responsive" alt="微博">              
+                </div>
+                <hr/>
+                
+                <div class="weixin">
+                    <a href="">
+                        <img src="images/footer/微信_二维码.png" class="img-responsive" alt="微信">
+                        <p>官方</p>
+                        <p>微信</p>
+                    </a>
+                    
+                    <div class="twoCode">
+                        <img src="images/footer/160-200.png" class="img-responsive" alt="微信">
+                    </div>
+                </div> 
+                <hr/>  
+                <div id="btn_top" title="回到顶部">
+                    <a href=""><img src="images/footer/two_back.png" alt="返回"></a>
+                </div>
+            </div> 
+        </div>  
+        <!-- 二维码End -->
+	</div>
+    <!-- 页脚Begin -->
+    <footer>
+        <div class="container-fluid containerFoot hidden-xs">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-sm-4  logoFoot">
+                        <img src="images/footer/logo页脚155-49.png" alt="" class="img-responsive">
+                        <hr>
+                        <div class="friendLink">友情链接：
+                        <a href="#">东莞理工学院 &nbsp;</a>
+                        <a href="#"> 蔡凡朔的轻博客</a>
+                        </div>
+                        <div class="tSupport">技术支持：莞青技术组&莞青设计组</div>
+                        <div class="tSupport">版权所有：莞青共鸣网</div>
+                    </div>
+                    <div class="col-lg-2 col-sm-2 col-lg-offset-2 col-sm-offset-2">
+                        <div class="aboutUs">关于我们<hr></div>
+                        <div class="guanQingBan"><a href="">莞青办</a></div>
+                        <div class="guanQingBan"><a href="">莞青君</a></div>
+                    </div>
+                    <div class="col-lg-2 col-sm-2 aboutCol">
+                        <div class="aboutUs">关注我们<hr></div>
+                        
+                        <div class="guanQingBan">
+                            <a href="">
+                                <img src="images/footer/微信 (1).png" alt="" class="oneHidden">
+                                <img src="images/footer/微信2.png" alt="" class="oneCode">
+                                <span class="footIcon">官方微信</span>
+                            </a>                      
+                            <div class="twoCode">
+                                <img src="images/footer/160-200.png" class="img-responsive">
+                            </div>
+                        </div>
+                        <div class="guanQingBan">
+                            <a href="">
+                                <img src="images/footer/微博 (1).png" alt="" class="oneHidden">
+                                <img src="images/footer/微博2.png" alt="" class="oneCode">
+                                <span class="footIcon">官方微博</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-sm-2  aboutCol">
+                        <div class="aboutUs">联系我们<hr></div>
+                        <div class="guanQingBan"><img src="images/footer/头像.png" alt="" ><span class="footIcon">黄泽鑫</span></div>
+                        <div class="guanQingBan"><img src="images/footer/dianhua.png" alt="" ><span class="footIcon">475710261</span></div>
+                        <div class="guanQingBan"><img src="images/footer/qq.png" alt="" ><span class="footIcon">13538354332</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 页脚Phone端 -->
+        <div class="visible-xs containerFoot ">
+            <div class="row">
+                <div class="col-xs-12">
+                    <img src="images/footer/logo_foot.png" alt="" class="img-responsive col-xs-4">
+                    <a href=""><img src="images/footer/weixinfooter.png" alt="" class=" img-responsive col-xs-2 col-xs-offset-3 weixinFooter"></a>
+                    <a href=""><img src="images/footer/weibofooter.png" alt="" class=" img-responsive col-xs-2"></a>
+                    
+                </div>
+                <p>《莞工青年论坛》办公室</p>
+            </div>
+        </div>
+    </footer>
+</body>
+    <script src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/讲座详情页.js"></script> 
+</html>

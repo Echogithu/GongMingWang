@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>共鸣网2.0</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <meta name="description" content="东莞理工学院莞工青年论坛共鸣网">
+    <meta name="author" content="东莞理工学院莞青7.0技术组">
+    <meta name="keywords" content="东莞理工学院 莞工青年论坛 共鸣网">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/nav.css">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+</head>
+<body>
+    <header>
+        <nav class="navbar-default navbar-fixed-top navStyle" role="navigation">
+            <div class="container">
+                <!-- 移动端导航栏 -->
+                <div class="phoneNav visible-xs">
+                    <div class="phoneLanmu"><a href=""><img src="images/zixunye/left.png" alt=""> 栏目</a></div>
+                </div>
+                <!-- END-移动端导航栏 -->
+                <!-- pc、pad端导航栏 -->
+                <!-- PC、pad公用logo -->
+                <div class="PCNav">
+                    <a href="#" class="logo hidden-xs">
+                        <img src="images/nav/logo.png">
+                    </a>
+                    <div class="collapse navbar-collapse hidden-xs" id="navbar-menu">
+                        <ul class="nav navbar-nav navList ">
+                            <li ><a href="#">首页</a></li>
+                            <li class="hoverDropDown">
+                                <a href="#">视频</a>
+                                <ul class="dropdownMenu">
+                                    <li data-num="1">
+                                        <a href="#"><img src="images/nav/1i.png">讲座现场</a>
+                                    </li>
+                                    <li data-num="2">
+                                        <a href="#"><img src="images/nav/2i.jpg">精彩回顾</a>
+                                    </li>
+                                    <li data-num="3">
+                                        <a href="#"><img src="images/nav/3i.png">莞青杂烩</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="active"><a href="#">资讯</a></li>
+                            <li><a href="#">栏目</a></li>
+                        </ul>
+                        <ul class="rightNav">
+                            <li>
+                                <i class="search iconfont icon-fangdajing"></i>
+                            </li>
+                            <li><a href="#">登录</a><span>|</span></li>
+                            <li><a href="#">注册</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- END-pc、pad端导航栏 -->
+                <!-- 搜索弹出框 -->
+                <div class="searchForm PCSeachForm">
+                    <form class="input-group">
+                        <span class="input-group-addon closeBtn">×</span>
+                        <input type="text" placeholder="搜索讲座主题、期数、嘉宾...">
+                        <span class="input-group-addon hidden-xs">
+                            <i class="search iconfont icon-fangdajing"></i>
+                        </span>
+                        <ul class="droptip">
+                            <li><span>热门搜索</span></li>
+                            <li><a href="">hello</a></li>
+                            <li><a href="">hello</a></li>
+                            <li><a href="">hello</a></li>
+                            <li><a href="">hello</a></li>
+                        </ul>
+                    </form>
+                </div>
+                <!-- END-搜索弹出框 -->
+            </div>
+            <!-- END-container -->
+        </nav>
+        <!-- 面包屑导航栏-phone端-底部 -->
+        <nav class="visible-xs">
+            <ul class="breadNav">
+                <li class="breadList active">
+                    <a href="">
+                        <i class="iconfont icon-shouye"></i>
+                        <p>首页</p>
+                    </a>
+                </li>
+                <li class="breadList">
+                    <a href="">
+                        <i class="iconfont icon-shipinwenjian"></i>
+                        <p>视频</p>
+                    </a>
+                </li>
+                <li class="breadList">
+                    <a href="">
+                        <i class="iconfont icon-xinxi"></i>
+                        <p>资讯</p>
+                    </a>
+                </li>
+                <li class="breadList">
+                    <a href="">
+                        <i class="iconfont icon-lanmusousuo"></i>
+                        <p>栏目</p>
+                    </a>
+                </li>
+                <li class="breadList">
+                    <a href="">
+                        <i class="iconfont icon-yonghu1"></i>
+                        <p>用户</p>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container-fluid containerFluidLanmu" id="informationZone">
+            <!-- 资讯专区标题Begin -->
+            <div class="container" >
+                <!-- 标题 -->
+                <div class="vxTitle hidden-xs">
+                    <img src="images/zixunye/栏目.png" alt="" class="img-responsive">
+                    <ul class="vxRightMenu">
+                        <li>排序：</li>
+                        <li>
+                            <input type="radio" name="sortType" id="vxNew" value="X" class="radio"  checked>
+                            <label for="vxNew" class="radio">最新</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="sortType" id="vxHot" value="M" class="radio">
+                            <label for="vxHot" class="radio" >最热</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="sortType" id="vxGood" value="F" class="radio">
+                            <label for="vxGood" class="radio" >好评</label>
+                        </li>
+                    </ul>
+                </div>
+                <!-- END-标题 -->
+            </div>
+        </div>
+        <!-- 再品模块Begin -->
+        <div class="container-fluid lanmuContainerFluid">
+            <div class="container lanmuContainer">
+                <div class="row lanmuPageRow ">
+                    <div class="col-lg-4 col-sm-4 col-xs-12  colFour">
+                        <!-- 栏目专区标题Phone端（20180803-改） -->
+                        <div class=" visible-xs">               
+                            <div class="dataPhone">
+                                <p>03月27日08:30</p>
+                            </div>
+                        </div>
+                        <div class="panel panel-default panelColumn">
+                            <div class="panel-body panelBody">
+                                <img src="images/lanmu/1.png" alt="再品" class="img-responsive">
+                                <h5 class="text-center"><a href="">再品 | “他喜欢男人，而她是色盲” “他喜欢男人，而她是色盲”</a></h5>
+                                <p>他们的一生，一直在追求着自由，憧憬着有颜色的世界，守护着自己的乌托邦。</p>
+                                <div class="linkRead hidden-xs">
+                                    <a href="#">点击阅读</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 再品模块End -->
+                    <!-- 微莞电台模块Begin -->
+                    <div class="col-lg-4 col-sm-4 col-xs-12 colFour">
+                        <!-- 栏目专区标题Phone端（20180803-改） -->
+                        <div class=" visible-xs">               
+                            <div class="dataPhone">
+                                <p>03月27日08:30</p>
+                            </div>
+                        </div>
+                        <div class="panel panel-default panelColumn ">
+                            <div class="panel-body panelBody">
+                                <img src="images/lanmu/2.png" alt=""  class="img-responsive">
+                                <h5 class="text-center"><a href="">微莞电台 | 你的善良，必须有点锋芒</a></h5>
+                                <p>真正的善意，不是一味付出，而是选择。善意里包含了许多东西，是需要我们去分辨的。</p>
+                                <div class="linkRead hidden-xs"><a href="#">点击阅读</a></div>
+                            </div>
+                        </div>
+                    </div>   
+                    <!-- 微莞电台模块End-->
+                    <!-- 大城小事模块Begin -->       
+                    <div class="col-lg-4 col-sm-4 col-xs-12 colFour">
+                        <!-- 栏目专区标题Phone端（20180803-改） -->
+                        <div class=" visible-xs">               
+                            <div class="dataPhone">
+                                <p>03月27日08:30</p>
+                            </div>
+                        </div>
+                        <div class="panel panel-default panelColumn">
+                            <div class="panel-body panelBody">
+                                <img src="images/lanmu/3.png" alt=""  class="img-responsive">
+                                <h5 class="text-center"><a href="">大城小事 | 每个人心中都有一座城</a></h5>
+                                <p>城市喧嚣，人要闹。有人说回不去的叫家乡。有人说到不了的叫远方。</p>
+                                <div class="linkRead hidden-xs"><a href="#">点击阅读</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 大城小事模块End-->
+                </div>
+                <div class="row lanmuPageRow ">
+                    <div class="col-lg-4 col-sm-4 col-xs-12  colFour">
+                        <!-- 栏目专区标题Phone端（20180803-改） -->
+                        <div class=" visible-xs">               
+                            <div class="dataPhone">
+                                <p>03月27日08:30</p>
+                            </div>
+                        </div>
+                        <div class="panel panel-default panelColumn">
+                            <div class="panel-body panelBody">
+                                <img src="images/lanmu/1.png" alt="再品" class="img-responsive">
+                                <h5 class="text-center"><a href="">再品 | “他喜欢男人，而她是色盲”</a></h5>
+                                <p>他们的一生，一直在追求着自由，憧憬着有颜色的世界，守护着自己的乌托邦。</p>
+                                <div class="linkRead hidden-xs">
+                                    <a href="#">点击阅读</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 再品模块End -->
+                    <!-- 微莞电台模块Begin -->
+                    <div class="col-lg-4 col-sm-4 col-xs-12 colFour">
+                        <!-- 栏目专区标题Phone端（20180803-改） -->
+                        <div class=" visible-xs">               
+                            <div class="dataPhone">
+                                <p>03月27日08:30</p>
+                            </div>
+                        </div>
+                        <div class="panel panel-default panelColumn ">
+                            <div class="panel-body panelBody">
+                                <img src="images/lanmu/2.png" alt=""  class="img-responsive">
+                                <h5 class="text-center"><a href="">微莞电台 | 你的善良，必须有点锋芒</a></h5>
+                                <p>真正的善意，不是一味付出，而是选择。善意里包含了许多东西，是需要我们去分辨的。</p>
+                                <div class="linkRead hidden-xs"><a href="#">点击阅读</a></div>
+                            </div>
+                        </div>
+                    </div>   
+                    <!-- 微莞电台模块End-->
+                    <!-- 大城小事模块Begin -->       
+                    <div class="col-lg-4 col-sm-4 col-xs-12 colFour">
+                        <!-- 栏目专区标题Phone端（20180803-改） -->
+                        <div class=" visible-xs">               
+                            <div class="dataPhone">
+                                <p>03月27日08:30</p>
+                            </div>
+                        </div>
+                        <div class="panel panel-default panelColumn">
+                            <div class="panel-body panelBody">
+                                <img src="images/lanmu/3.png" alt=""  class="img-responsive">
+                                <h5 class="text-center"><a href="">大城小事 | 每个人心中都有一座城</a></h5>
+                                <p>城市喧嚣，人要闹。有人说回不去的叫家乡。有人说到不了的叫远方。</p>
+                                <div class="linkRead hidden-xs"><a href="#">点击阅读</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 大城小事模块End-->
+                    
+                </div>
+                <!-- <a href="" >
+                    <div class="visible-xs moreColumn">更多栏目 ></div>
+                </a> -->
+                <!-- 分页Begin -->
+                <div class="row pageRow hidden-xs pageRow1">
+                    <div class="col-lg-12 col-md-12 col-sm-12 pageNav  text-center">
+                        <nav aria-label="Page navigation ">
+                            <ul class="pagination ">
+                                <li>
+                                <a href="#" aria-label="Previous" class="prePage">
+                                    <span aria-hidden="true"><</span>
+                                </a>
+                                </li>
+                                <li class="active"><a href="#" class="nPage" >1</a></li>
+                                <li><a href="#" class="nPage">2</a></li>
+                                <li><a href="#" class="nPage">3</a></li>
+                                <li><a href="#" class="nPage">4</a></li>
+                                <li><a href="#" class="nPage">5</a></li>
+                                <li>
+                                <a href="#" aria-label="Next" class="nextPage">
+                                    <span aria-hidden="true">></span>
+                                </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <!-- 分页End -->
+            </div>
+            <!-- 二维码Begin -->
+        <div class="container visible-lg hiddden-xs">
+            <div class="toTop">
+                <div class="weibo">
+                    <img src="images/footer/微博_二维码.png" class="img-responsive" alt="微博">              
+                </div>
+                <hr/>
+                
+                <div class="weixin">
+                    <a href="">
+                        <img src="images/footer/微信_二维码.png" class="img-responsive" alt="微信">
+                        <p>官方</p>
+                        <p>微信</p>
+                    </a>
+                    
+                    <div class="twoCode">
+                        <img src="images/footer/160-200.png" class="img-responsive" alt="微信">
+                    </div>
+                </div> 
+                <hr/>  
+                <div id="btn_top" title="回到顶部">
+                    <a href=""><img src="images/footer/two_back.png" alt="返回"></a>
+                </div>
+            </div> 
+        </div>  
+        <!-- 二维码End -->
+    </main>
+
+    <!-- 页脚Begin -->
+    <footer>
+        <div class="container-fluid containerFoot hidden-xs">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-sm-4  logoFoot">
+                        <img src="images/footer/logo页脚155-49.png" alt="" class="img-responsive">
+                        <hr>
+                        <div class="friendLink">友情链接：
+                        <a href="#">东莞理工学院 &nbsp;</a>
+                        <a href="#"> 蔡凡朔的轻博客</a>
+                        </div>
+                        <div class="tSupport">技术支持：莞青技术组&莞青设计组</div>
+                        <div class="tSupport">版权所有：莞青共鸣网</div>
+                    </div>
+                    <div class="col-lg-2 col-sm-2 col-lg-offset-2 col-sm-offset-2">
+                        <div class="aboutUs">关于我们<hr></div>
+                        <div class="guanQingBan"><a href="">莞青办</a></div>
+                        <div class="guanQingBan"><a href="">莞青君</a></div>
+                    </div>
+                    <div class="col-lg-2 col-sm-2 aboutCol">
+                        <div class="aboutUs">关注我们<hr></div>
+                        
+                        <div class="guanQingBan">
+                            <a href="">
+                                <img src="images/footer/微信 (1).png" alt="" class="oneHidden">
+                                <img src="images/footer/微信2.png" alt="" class="oneCode">
+                                <span class="footIcon">官方微信</span>
+                            </a>                      
+                            <div class="twoCode">
+                                <img src="images/footer/160-200.png" class="img-responsive">
+                            </div>
+                        </div>
+                        <div class="guanQingBan">
+                            <a href="">
+                                <img src="images/footer/微博 (1).png" alt="" class="oneHidden">
+                                <img src="images/footer/微博2.png" alt="" class="oneCode">
+                                <span class="footIcon">官方微博</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-sm-2  aboutCol">
+                        <div class="aboutUs">联系我们<hr></div>
+                        <div class="guanQingBan"><img src="images/footer/头像.png" alt="" ><span class="footIcon">黄泽鑫</span></div>
+                        <div class="guanQingBan"><img src="images/footer/dianhua.png" alt="" ><span class="footIcon">475710261</span></div>
+                        <div class="guanQingBan"><img src="images/footer/qq.png" alt="" ><span class="footIcon">13538354332</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 页脚Phone端 -->
+        <div class="visible-xs containerFoot ">
+            <div class="row">
+                <div class="col-xs-12">
+                    <img src="images/footer/logo_foot.png" alt="" class="img-responsive col-xs-4">
+                    <a href=""><img src="images/footer/weixinfooter.png" alt="" class=" img-responsive col-xs-2 col-xs-offset-3 weixinFooter"></a>
+                    <a href=""><img src="images/footer/weibofooter.png" alt="" class=" img-responsive col-xs-2"></a>
+                    
+                </div>
+                <p>《莞工青年论坛》办公室</p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,1264 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>共鸣网2.0</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <meta name="description" content="东莞理工学院莞工青年论坛共鸣网">
+    <meta name="author" content="东莞理工学院莞青7.0技术组">
+    <meta name="keywords" content="东莞理工学院 莞工青年论坛 共鸣网">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/nav.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar-default navbar-fixed-top navStyle" role="navigation">
+            <div class="container">
+                <!-- 移动端导航栏 -->
+                <div class="phoneNav visible-xs">
+                    <!-- 左侧三线导航按钮 -->
+                    <div class="navToggle">
+                        <i class="iconfont icon-mianbaoxiedaohangxiaoxian"></i>
+                    </div>
+                    <!-- phone logo -->
+                    <a href="#" class="logo">
+                        <img src="images/nav/logo.png">
+                    </a>
+                    <!-- 移动端搜索按钮 -->
+                    <div class="phoneSearch">
+                        <i class="search iconfont icon-fangdajing"></i>
+                    </div>
+                </div>
+                <!-- END-移动端导航栏 -->
+                <!-- pc、pad端导航栏 -->
+                <!-- PC、pad公用logo -->
+                <div class="PCNav">
+                    <a href="#" class="logo hidden-xs">
+                        <img src="images/nav/logo.png">
+                    </a>
+                    <div class="collapse navbar-collapse hidden-xs" id="navbar-menu">
+                        <ul class="nav navbar-nav navList ">
+                            <li class="active"><a href="#">首页</a></li>
+                            <li class="hoverDropDown">
+                                <a href="#">视频</a>
+                                <ul class="dropdownMenu">
+                                    <li data-num="1">
+                                        <a href="#"><img src="images/nav/1i.png">讲座现场</a>
+                                    </li>
+                                    <li data-num="2">
+                                        <a href="#"><img src="images/nav/2i.jpg">精彩回顾</a>
+                                    </li>
+                                    <li data-num="3">
+                                        <a href="#"><img src="images/nav/3i.png">莞青杂烩</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="#">资讯</a></li>
+                            <li><a href="#">栏目</a></li>
+                        </ul>
+                        <ul class="rightNav">
+                            <li>
+                                <i class="search iconfont icon-fangdajing"></i>
+                            </li>
+                            <li><a href="#">登录</a><span>|</span></li>
+                            <li><a href="#">注册</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- END-pc、pad端导航栏 -->
+                <!-- 搜索弹出框 -->
+                <div class="searchForm PCSeachForm">
+                    <form class="input-group">
+                        <span class="input-group-addon closeBtn">×</span>
+                        <input type="text" placeholder="搜索讲座主题、期数、嘉宾...">
+                        <span class="input-group-addon hidden-xs">
+                            <i class="search iconfont icon-fangdajing"></i>
+                        </span>
+                        <ul class="droptip">
+                            <li><span>热门搜索</span></li>
+                            <li><a href="">hello</a></li>
+                            <li><a href="">hello</a></li>
+                            <li><a href="">hello</a></li>
+                            <li><a href="">hello</a></li>
+                        </ul>
+                    </form>
+                </div>
+                <!-- END-搜索弹出框 -->
+            </div>
+            <!-- END-container -->
+        </nav>
+        <!-- 面包屑导航栏-phone端-底部 -->
+        <nav class="visible-xs">
+            <ul class="breadNav">
+                <li class="breadList active">
+                    <a href="#">
+                        <i class="iconfont icon-shouye"></i>
+                        <p>首页</p>
+                    </a>
+                </li>
+                <li class="breadList">
+                    <a href="#videoZone">
+                        <i class="iconfont icon-shipinwenjian"></i>
+                        <p>视频</p>
+                    </a>
+                </li>
+                <li class="breadList">
+                    <a href="#informationZone">
+                        <i class="iconfont icon-xinxi"></i>
+                        <p>资讯</p>
+                    </a>
+                </li>
+                <li class="breadList">
+                    <a href="#columnZone">
+                        <i class="iconfont icon-lanmusousuo"></i>
+                        <p>栏目</p>
+                    </a>
+                </li>
+                <li class="breadList">
+                    <a href="">
+                        <i class="iconfont icon-yonghu1"></i>
+                        <p>用户</p>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- 轮播图Begin -->
+        <div class="container viewContainer" id="videoZone">
+            <div class="row ">
+                <div class="col-lg-12 col-sm-12 col-xs-12 CarouselPhone">
+                    <div id="myCarousel" class="carousel slide myCarousel"  data-ride="carousel">
+                        <!-- 轮播（Carousel）指标 -->
+                        <ol class="carousel-indicators visible-xs carouselIndicators">
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel" data-slide-to="1"></li>
+                            <li data-target="#myCarousel" data-slide-to="2"></li>
+                            <li data-target="#myCarousel" data-slide-to="3"></li>
+                            <li data-target="#myCarousel" data-slide-to="4"></li>
+                        </ol>
+                        <!-- 轮播（Carousel）项目 -->
+                        <div class="carousel-inner img">
+                            <div class="item active imgItem1">
+                                <center><img src="images/lunbo/5.jpg" alt="First slide" class="img-responsive"></center>
+                                <!-- <div class="carousel-caption visible-xs carouselCaption">【117预告】王宇民 | 影视文化传创作</div> -->
+                            </div>
+                            <div class="item imgItem2">
+                                <center><img src="images/lunbo/6.jpg" alt="Second slide" class="img-responsive"></center>
+                            </div>
+                            <div class="item imgItem3">
+                                <center><img src="images/lunbo/7.jpg" alt="Third slide" class="img-responsive"></center>
+                            </div>
+                            <div class="item imgItem4">
+                                <center><img src="images/lunbo/8.jpg" alt="Third slide" class="img-responsive"></center>
+                            </div>
+                        </div>
+                        <!-- 轮播（Carousel）导航 -->
+                        <a id="leftControl" class="left  leftControl hidden-xs" href="#myCarousel" role="button" data-slide="prev">
+                            <span  aria-hidden="true">
+                                <img src="images/lunbo/btn1.png" id="leftWhiteBtn" class="img-responsive">
+                            </span>
+                          </a>
+                        <a class="right rightControl  hidden-xs" href="#myCarousel" role="button" data-slide="next">
+                            <span  aria-hidden="true">
+                                <img src="images/lunbo/btn2.png" id="rightWhiteBtn" class="img-responsive">
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- 轮播图End -->
+            <!-- 视频模块Begin -->
+            <div class="row viewRow">
+                <!-- 标题-begin -->
+                <div class="videoTitle hidden-xs">
+                    <img src="images/video/视频.png " alt="" class="img-responsive">
+                </div>
+                <ul class="videoTitle visible-xs">
+                    <li>
+                        <h3>视频专区</h3>
+                    </li>
+                    <li>
+                        <p>
+                            <span>————</span>VIDEO ZONE<span>————</span>
+                        </p>
+                    </li>
+                </ul>
+                <!-- 标题-END -->
+                <!-- 视频左边模块Begin -->
+                <!-- 左侧海报 -->
+                <div class="col-lg-4 col-sm-4 hidden-xs">
+                    <!-- 时间标签-Begin -->
+                    <div class="timeOut">
+                        <div class="timeIn">
+                            <h4 class="vDay">20</h4>
+                            <h5 class="vMonth">Nov</h5>
+                        </div>
+                    </div>
+                    <!-- 时间标签-END -->
+                    
+                    <!-- 主体模块-Begin -->
+                    <div class="videoLeft">
+                        <!-- 视频页-Begin -->
+                        <div class="videoBox">
+                            <a href=""><img src="images/video/bg拷贝3.png"  alt="" class="imgResponsive"></a>
+                            <!-- <a href=""><img src="images/video/bg拷贝3.png"  alt="" class=" visible-lg hidden-lg padImg img-responsive "></a> -->
+                            <a href="">
+                                <div class="hiddenVideo">
+                                    <img src="images/video/播放.png" alt="" class="imgResponsive">
+                                </div>
+                            </a>
+                        </div>
+                        <!-- 视频页-END -->
+                        <!-- 文字信息-Begin -->
+                        <ul class="vText">
+                            <li class="vPriod">【预告片】特别期</li>
+                            <li class="vTitle"><a href="">弦音粤动，青春一夏</a></li>
+                            <li class="divideLine"></li>
+                            <li class="vName">嘉宾-胡夏&后弦</li>
+                            <p class="vPlace">松山湖校区学术报告厅</p>
+                        </ul>
+                        <!-- 文字信息-END -->
+                        <!-- 右侧播放按钮-Begin -->
+                        <a href="">
+                            <div class="playBtn">
+                                <img src="images/video/左播放.png" alt="" class="imgResponsive">
+                            </div>
+                        </a>
+                        <!-- 播放按钮-END -->
+                    </div>
+                    <!-- 主体模块-END -->
+                </div>
+                <!-- 视频左边模块End-->
+                <!-- 视频右边模块Begin -->               
+                <div class="col-lg-8 col-sm-8 videoRight hidden-xs">
+                        <!-- 标题-begin -->
+                        <div>
+                            <ul class="tabMenu " role="tablist">
+                                <li role="presentation" class="guideFont active" >
+                                    <a href="#lecture" aria-controls="lecture" role="tab" data-toggle="tab" >
+                                        <span>讲座现场</span><!-- 改 -->
+                                        <img src="images/video/绿l.png" alt="">
+                                    </a>
+                                </li>
+                                <li role="presentation" class="guideFont ">
+                                    <a href="#shortFilm" aria-controls="shortFilm" role="tab" data-toggle="tab">
+                                    <span>精彩短片</span>
+                                    <img src="images/video/绿l.png" alt="">
+                                    </a>
+                                </li>
+                                <li role="presentation" class="guideFont">
+                                    <a href="#chowder" aria-controls="chowder" role="tab" data-toggle="tab">
+                                        <span>莞青杂烩</span>
+                                        <img src="images/video/绿l.png" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                            <a href="" class="more">更多 <span>></span></a>
+                            <!-- <a href="" class="infoMore">更多 <span>></span></a> -->
+                            <hr />
+                        </div>
+                        <!-- 标题-END -->
+                        <!-- 标签页-begin -->
+                        <div class="tab-content">
+                            <!-- 讲座现场-begin -->
+                            <div role="tabpanel" class="tab-pane  active" id="lecture">
+                                <!-- 栏目块-begin -->
+                                <div class="row ">
+                                    <!-- 模块-begin -->
+                                    <div class="col-lg-3 col-sm-3  videoPart">
+                                        <a href="">
+                                            <!-- 视频框 -->
+                                            <div class="rVideo">
+                                                <img src="images/video/图层937.png"  alt="" class="img-responsive">
+                                                <div class="hiddenImageR">
+                                                    <img src="images/video/矩形638.png" alt="" class="img-responsive">
+                                                </div>
+                                                <!-- 左上角期数 -->
+                                                <div class="vPeriod">
+                                                    <img src="images/video/绿bg拷贝.png" class="periodGreen img-responsive"  alt="">
+                                                    <img src="images/video/绿bg拷贝2.png" class="periodOrange" height="44px" width="44px" alt="">
+                                                    <span>112期</span>
+                                                </div>
+                                                <div class="imageBottom">
+                                                    <p>02:05:45</p>
+                                                </div>
+                                                <div class="clean"></div>
+                                            </div>
+                                            <span>考公的那些事儿</span>
+                                            <p>嘉宾-黄昊</p>
+                                            <!-- 浏览、评论、点赞 -->
+                                            <i><img src="images/yugao/观看.png" alt="">1212</i>
+                                            <!-- 浏览次数 -->
+                                            <i><img src="images/video/i评论.png" alt="">12</i>
+                                            <!-- 评论 -->
+                                            <i><img src="images/video/i点赞.png" alt="">20</i>
+                                            <!-- 点赞 -->
+                                        </a>
+                                    </div>
+                                    <!-- 模块-END -->
+                                    <!-- 模块-begin -->
+                                    <div class="col-lg-3 col-sm-3 videoPart">
+                                        <a href="">
+                                            <!-- 视频框 -->
+                                            <div class="rVideo">
+                                                <img src="images/video/图层937.png" class="img-responsive " alt="">
+                                                <div class="hiddenImageR">
+                                                    <img src="images/video/矩形638.png" alt="" class="img-responsive">
+                                                </div>
+                                                <!-- 左上角期数 -->
+                                                <div class="vPeriod">
+                                                    <img src="images/video/绿bg拷贝.png" class="periodGreen" height="44px" width="44px" alt="">
+                                                    <img src="images/video/绿bg拷贝2.png" class="periodOrange" height="44px" width="44px" alt="">
+                                                    <span>112期</span>
+                                                </div>
+                                                <div class="imageBottom">
+                                                    <p>02:05:45</p>
+                                                </div>
+                                            </div>
+                                            <span>考公的那些事儿</span>
+                                            <p>嘉宾-黄昊</p>
+                                            <!-- 浏览、评论、点赞 -->
+                                            <i><img src="images/yugao/观看.png" alt="">1212</i>
+                                            <!-- 浏览次数 -->
+                                            <i><img src="images/video/i评论.png" alt="">12</i>
+                                            <!-- 评论 -->
+                                            <i><img src="images/video/i点赞.png" alt="">20</i>
+                                            <!-- 点赞 -->
+                                        </a>
+                                    </div>
+                                    <!-- 模块-END -->
+                                    <!-- 模块-begin -->
+                                    <div class="col-lg-3 col-sm-3 videoPart">
+                                        <a href="">
+                                            <!-- 视频框 -->
+                                            <div class="rVideo">
+                                                <img src="images/video/图层937.png" class="img-responsive" alt="">
+                                                <div class="hiddenImageR">
+                                                    <img src="images/video/矩形638.png" alt="" class="img-responsive">
+                                                </div>
+                                                <!-- 左上角期数 -->
+                                                <div class="vPeriod">
+                                                    <img src="images/video/绿bg拷贝.png" class="periodGreen" height="44px" width="44px" alt="">
+                                                    <img src="images/video/绿bg拷贝2.png" class="periodOrange" height="44px" width="44px" alt="">
+                                                    <span>112期</span>
+                                                </div>
+                                                <div class="imageBottom">
+                                                    <p>02:05:45</p>
+                                                </div>
+                                            </div>
+                                            <span>考公的那些事儿</span>
+                                            <p>嘉宾-黄昊</p>
+                                            <!-- 浏览、评论、点赞 -->
+                                            <i><img src="images/yugao/观看.png" alt="">1212</i>
+                                            <!-- 浏览次数 -->
+                                            <i><img src="images/video/i评论.png" alt="">12</i>
+                                            <!-- 评论 -->
+                                            <i><img src="images/video/i点赞.png" alt="">20</i>
+                                            <!-- 点赞 -->
+                                        </a>
+                                    </div>
+                                    <!-- 模块-END -->
+                                    <!-- 模块-begin -->
+                                    <div class="col-lg-3 col-sm-3 videoPart">
+                                        <a href="">
+                                            <!-- 视频框 -->
+                                            <div class="rVideo">
+                                                <img src="images/video/图层937.png" class="img-responsive" alt="">
+                                                <div class="hiddenImageR">
+                                                    <img src="images/video/矩形638.png" alt="" class="img-responsive">
+                                                </div>
+                                                <!-- 左上角期数 -->
+                                                <div class="vPeriod">
+                                                    <img src="images/video/绿bg拷贝.png" class="periodGreen" height="44px" width="44px" alt="">
+                                                    <img src="images/video/绿bg拷贝2.png" class="periodOrange" height="44px" width="44px" alt="">
+                                                    <span>112期</span>
+                                                </div>
+                                                <div class="imageBottom">
+                                                    <p>02:05:45</p>
+                                                </div>
+                                            </div>
+                                            <span>考公的那些事儿</span>
+                                            <p>嘉宾-黄昊</p>
+                                            <!-- 浏览、评论、点赞 -->
+                                            <i><img src="images/yugao/观看.png" alt="">1212</i>
+                                            <!-- 浏览次数 -->
+                                            <i><img src="images/video/i评论.png" alt="">12</i>
+                                            <!-- 评论 -->
+                                            <i><img src="images/video/i点赞.png" alt="">20</i>
+                                            <!-- 点赞 -->
+                                        </a>
+                                    </div>
+                                    <!-- 模块-END -->
+                                    <!-- 模块-begin -->
+                                    <div class="col-lg-3 col-sm-3 videoPart">
+                                        <a href="">
+                                            <!-- 视频框 -->
+                                            <div class="rVideo">
+                                                <img src="images/video/图层937.png" class="img-responsive" alt="">
+                                                <div class="hiddenImageR">
+                                                    <img src="images/video/矩形638.png" alt="" class="img-responsive">
+                                                </div>
+                                                <!-- 左上角期数 -->
+                                                <div class="vPeriod">
+                                                    <img src="images/video/绿bg拷贝.png" class="periodGreen" height="44px" width="44px" alt="">
+                                                    <img src="images/video/绿bg拷贝2.png" class="periodOrange" height="44px" width="44px" alt="">
+                                                    <span>112期</span>
+                                                </div>
+                                                <div class="imageBottom">
+                                                    <p>02:05:45</p>
+                                                </div>
+                                            </div>
+                                            <span>考公的那些事儿</span>
+                                            <p>嘉宾-黄昊</p>
+                                            <!-- 浏览、评论、点赞 -->
+                                            <i><img src="images/yugao/观看.png" alt="">1212</i>
+                                            <!-- 浏览次数 -->
+                                            <i><img src="images/video/i评论.png" alt="">12</i>
+                                            <!-- 评论 -->
+                                            <i><img src="images/video/i点赞.png" alt="">20</i>
+                                            <!-- 点赞 -->
+                                        </a>
+                                    </div>
+                                    <!-- 模块-END -->
+                                    <!-- 模块-begin -->
+                                    <div class="col-lg-3 col-sm-3 videoPart">
+                                        <a href="">
+                                            <!-- 视频框 -->
+                                            <div class="rVideo">
+                                                <img src="images/video/图层937.png" class="img-responsive" alt="">
+                                                <div class="hiddenImageR">
+                                                    <img src="images/video/矩形638.png" alt="" class="img-responsive">
+                                                </div>
+                                                <!-- 左上角期数 -->
+                                                <div class="vPeriod">
+                                                    <img src="images/video/绿bg拷贝.png" class="periodGreen" height="44px" width="44px" alt="">
+                                                    <img src="images/video/绿bg拷贝2.png" class="periodOrange" height="44px" width="44px" alt="">
+                                                    <span>112期</span>
+                                                </div>
+                                                <div class="imageBottom">
+                                                    <p>02:05:45</p>
+                                                </div>
+                                            </div>
+                                            <span>考公的那些事儿</span>
+                                            <p>嘉宾-黄昊</p>
+                                            <!-- 浏览、评论、点赞 -->
+                                            <i><img src="images/yugao/观看.png" alt="">1212</i>
+                                            <!-- 浏览次数 -->
+                                            <i><img src="images/video/i评论.png" alt="">12</i>
+                                            <!-- 评论 -->
+                                            <i><img src="images/video/i点赞.png" alt="">20</i>
+                                            <!-- 点赞 -->
+                                        </a>
+                                    </div>
+                                    <!-- 模块-END -->
+                                    <!-- 模块-begin -->
+                                    <div class="col-lg-3 col-sm-3 videoPart">
+                                        <a href="">
+                                            <!-- 视频框 -->
+                                            <div class="rVideo">
+                                                <img src="images/video/图层937.png" class="img-responsive" alt="">
+                                                <div class="hiddenImageR">
+                                                    <img src="images/video/矩形638.png" alt="" class="img-responsive">
+                                                </div>
+                                                <!-- 左上角期数 -->
+                                                <div class="vPeriod">
+                                                    <img src="images/video/绿bg拷贝.png" class="periodGreen" height="44px" width="44px" alt="">
+                                                    <img src="images/video/绿bg拷贝2.png" class="periodOrange" height="44px" width="44px" alt="">
+                                                    <span>112期</span>
+                                                </div>
+                                                <div class="imageBottom">
+                                                    <p>02:05:45</p>
+                                                </div>
+                                            </div>
+                                            <span>考公的那些事儿</span>
+                                            <p>嘉宾-黄昊</p>
+                                            <!-- 浏览、评论、点赞 -->
+                                            <i><img src="images/yugao/观看.png" alt="">1212</i>
+                                            <!-- 浏览次数 -->
+                                            <i><img src="images/video/i评论.png" alt="">12</i>
+                                            <!-- 评论 -->
+                                            <i><img src="images/video/i点赞.png" alt="">20</i>
+                                            <!-- 点赞 -->
+                                        </a>
+                                    </div>
+                                    <!-- 模块-END -->
+                                    <!-- 模块-begin -->
+                                    <div class="col-lg-3 col-sm-3 videoPart">
+                                        <a href="">
+                                            <!-- 视频框 -->
+                                            <div class="rVideo">
+                                                <img src="images/video/图层937.png" class="img-responsive" alt="">
+                                                <div class="hiddenImageR">
+                                                    <img src="images/video/矩形638.png" alt="" class="img-responsive">
+                                                </div>
+                                                <!-- 左上角期数 -->
+                                                <div class="vPeriod">
+                                                    <img src="images/video/绿bg拷贝.png" class="periodGreen" height="44px" width="44px" alt="">
+                                                    <img src="images/video/绿bg拷贝2.png" class="periodOrange" height="44px" width="44px" alt="">
+                                                    <span>112期</span>
+                                                </div>
+                                                <div class="imageBottom">
+                                                    <p>02:05:45</p>
+                                                </div>
+                                            </div>
+                                            <span>考公的那些事儿</span>
+                                            <p>嘉宾-黄昊</p>
+                                            <!-- 浏览、评论、点赞 -->
+                                            <i><img src="images/yugao/观看.png" alt="">1212</i>
+                                            <!-- 浏览次数 -->
+                                            <i><img src="images/video/i评论.png" alt="">12</i>
+                                            <!-- 评论 -->
+                                            <i><img src="images/video/i点赞.png" alt="">20</i>
+                                            <!-- 点赞 -->
+                                        </a>
+                                    </div>
+                                    <!-- 模块-END -->
+                                </div>
+                                <!-- 栏目块-END -->
+                            </div>
+                            <!-- 讲座现场-END -->
+                            <!-- 精彩短片-begin -->
+                            <div role="tabpanel" class="tab-pane " id="shortFilm">
+                                <div class="row ">
+                                    <!-- 模块-begin -->
+                                    <div class="col-lg-3 col-sm-3  videoPart">
+                                        <a href="">
+                                            <!-- 视频框 -->
+                                            <div class="rVideo">
+                                                <img src="images/video/图层937.png"  alt="" class="img-responsive">
+                                                <div class="hiddenImageR">
+                                                    <img src="images/video/矩形638.png" alt="" class="img-responsive">
+                                                </div>
+                                                <!-- 左上角期数 -->
+                                                <div class="vPeriod">
+                                                    <img src="images/video/绿bg拷贝.png" class="periodGreen img-responsive"  alt="">
+                                                    <img src="images/video/绿bg拷贝2.png" class="periodOrange" height="44px" width="44px" alt="">
+                                                    <span>112期</span>
+                                                </div>
+                                                <div class="imageBottom">
+                                                    <p>02:05:45</p>
+                                                </div>
+                                                <div class="clean"></div>
+                                            </div>
+                                            <span>考公的那些事儿</span>
+                                            <p>嘉宾-黄昊</p>
+                                            <!-- 浏览、评论、点赞 -->
+                                            <i><img src="images/yugao/观看.png" alt="">1212</i>
+                                            <!-- 浏览次数 -->
+                                            <i><img src="images/video/i评论.png" alt="">12</i>
+                                            <!-- 评论 -->
+                                            <i><img src="images/video/i点赞.png" alt="">20</i>
+                                            <!-- 点赞 -->
+                                        </a>
+                                    </div>
+                                    <!-- 模块-END -->
+                                    <!-- 模块-begin -->
+                                    <div class="col-lg-3 col-sm-3 videoPart">
+                                        <a href="">
+                                            <!-- 视频框 -->
+                                            <div class="rVideo">
+                                                <img src="images/video/图层937.png" class="img-responsive " alt="">
+                                                <div class="hiddenImageR">
+                                                    <img src="images/video/矩形638.png" alt="" class="img-responsive">
+                                                </div>
+                                                <!-- 左上角期数 -->
+                                                <div class="vPeriod">
+                                                    <img src="images/video/绿bg拷贝.png" class="periodGreen" height="44px" width="44px" alt="">
+                                                    <img src="images/video/绿bg拷贝2.png" class="periodOrange" height="44px" width="44px" alt="">
+                                                    <span>112期</span>
+                                                </div>
+                                                <div class="imageBottom">
+                                                    <p>02:05:45</p>
+                                                </div>
+                                            </div>
+                                            <span>考公的那些事儿</span>
+                                            <p>嘉宾-黄昊</p>
+                                            <!-- 浏览、评论、点赞 -->
+                                            <i><img src="images/yugao/观看.png" alt="">1212</i>
+                                            <!-- 浏览次数 -->
+                                            <i><img src="images/video/i评论.png" alt="">12</i>
+                                            <!-- 评论 -->
+                                            <i><img src="images/video/i点赞.png" alt="">20</i>
+                                            <!-- 点赞 -->
+                                        </a>
+                                    </div>
+                                    <!-- 模块-END -->
+                                    <!-- 模块-begin -->
+                                    <div class="col-lg-3 col-sm-3 videoPart">
+                                        <a href="">
+                                            <!-- 视频框 -->
+                                            <div class="rVideo">
+                                                <img src="images/video/图层937.png" class="img-responsive" alt="">
+                                                <div class="hiddenImageR">
+                                                    <img src="images/video/矩形638.png" alt="" class="img-responsive">
+                                                </div>
+                                                <!-- 左上角期数 -->
+                                                <div class="vPeriod">
+                                                    <img src="images/video/绿bg拷贝.png" class="periodGreen" height="44px" width="44px" alt="">
+                                                    <img src="images/video/绿bg拷贝2.png" class="periodOrange" height="44px" width="44px" alt="">
+                                                    <span>112期</span>
+                                                </div>
+                                                <div class="imageBottom">
+                                                    <p>02:05:45</p>
+                                                </div>
+                                            </div>
+                                            <span>考公的那些事儿</span>
+                                            <p>嘉宾-黄昊</p>
+                                            <!-- 浏览、评论、点赞 -->
+                                            <i><img src="images/yugao/观看.png" alt="">1212</i>
+                                            <!-- 浏览次数 -->
+                                            <i><img src="images/video/i评论.png" alt="">12</i>
+                                            <!-- 评论 -->
+                                            <i><img src="images/video/i点赞.png" alt="">20</i>
+                                            <!-- 点赞 -->
+                                        </a>
+                                    </div>
+                                    <!-- 模块-END -->
+                                    <!-- 模块-begin -->
+                                    <div class="col-lg-3 col-sm-3 videoPart">
+                                        <a href="">
+                                            <!-- 视频框 -->
+                                            <div class="rVideo">
+                                                <img src="images/video/图层937.png" class="img-responsive" alt="">
+                                                <div class="hiddenImageR">
+                                                    <img src="images/video/矩形638.png" alt="" class="img-responsive">
+                                                </div>
+                                                <!-- 左上角期数 -->
+                                                <div class="vPeriod">
+                                                    <img src="images/video/绿bg拷贝.png" class="periodGreen" height="44px" width="44px" alt="">
+                                                    <img src="images/video/绿bg拷贝2.png" class="periodOrange" height="44px" width="44px" alt="">
+                                                    <span>112期</span>
+                                                </div>
+                                                <div class="imageBottom">
+                                                    <p>02:05:45</p>
+                                                </div>
+                                            </div>
+                                            <span>考公的那些事儿</span>
+                                            <p>嘉宾-黄昊</p>
+                                            <!-- 浏览、评论、点赞 -->
+                                            <i><img src="images/yugao/观看.png" alt="">1212</i>
+                                            <!-- 浏览次数 -->
+                                            <i><img src="images/video/i评论.png" alt="">12</i>
+                                            <!-- 评论 -->
+                                            <i><img src="images/video/i点赞.png" alt="">20</i>
+                                            <!-- 点赞 -->
+                                        </a>
+                                    </div>
+                                    <!-- 模块-END -->
+                                </div>
+                            </div>
+                            <!-- 精彩短片-END -->
+                            <!-- 莞青杂烩-begin -->
+                            <div role="tabpanel" class="tab-pane " id="chowder">
+                                <div class="row">
+                                    <!-- 模块-begin -->
+                                    <div class="col-lg-3 col-sm-3 videoPart">
+                                        <a href="">
+                                            <!-- 视频框 -->
+                                            <div class="rVideo">
+                                                <img src="images/video/图层937.png" class="img-responsive" alt="">
+                                                <div class="hiddenImageR">
+                                                    <img src="images/video/矩形638.png" alt="" class="img-responsive">
+                                                </div>
+                                                <!-- 左上角期数 -->
+                                                <div class="vPeriod">
+                                                    <img src="images/video/绿bg拷贝.png" class="periodGreen" height="44px" width="44px" alt="">
+                                                    <img src="images/video/绿bg拷贝2.png" class="periodOrange" height="44px" width="44px" alt="">
+                                                    <span>112期</span>
+                                                </div>
+                                                <div class="imageBottom">
+                                                    <p>02:05:45</p>
+                                                </div>
+                                                <div class="clean"></div>
+                                            </div>
+                                            <span>考公的那些事儿</span>
+                                            <p>嘉宾-黄昊</p>
+                                            <!-- 浏览、评论、点赞 -->
+                                            <i><img src="images/yugao/观看.png" alt="">1212</i>
+                                            <!-- 浏览次数 -->
+                                            <i><img src="images/video/i评论.png" alt="">12</i>
+                                            <!-- 评论 -->
+                                            <i><img src="images/video/i点赞.png" alt="">20</i>
+                                            <!-- 点赞 -->
+                                        </a>
+                                    </div>
+                                    <!-- 模块-END -->
+                                </div>
+                            </div>
+                            <!-- 莞青杂烩-END -->
+                        </div>
+                        <!-- 标签页-END -->
+                </div>
+                <!-- 右侧Tab栏-PC端 -->
+                <!-- 视频右边模块End -->
+                <!-- 视频栏 - phone端 -->
+                <div class="hidden-lg hidden-sm hidden-md">
+                    <!-- 讲座现场-begin -->
+                    <div class="col-xs-12 phMarginB">
+                        <!-- 标题-begin -->
+                        <ul class="phPartTitle">
+                            <li>
+                                <img src="images/video/1i.jpg" alt="" class="imgResponsive">
+                            </li>
+                            <li>
+                                <span>讲座现场</span>
+                            </li>
+                            <li>
+                                <a href="" class="more">更多&nbsp;></a>
+                            </li>
+                        </ul>
+                        <!-- 标题-END -->
+                        <!-- 栏目块-begin -->
+                        <div class="row ">
+                            <!-- 模块-begin -->
+                            <div class="col-xs-6 videoPart">
+                                <a href="">
+                                    <!-- 视频框 -->
+                                    <div class="rVideo">
+                                        <img src="images/video/图层937.png" class="imgResponsive" alt="">
+                                        <div class="imageBottom">
+                                            <span>112期</span>
+                                            <p>02:05:45</p>
+                                        </div>
+                                        <!-- <div class="clean"></div> -->
+                                    </div>
+                                    <div class="newIco">
+                                        <p>New</p>
+                                    </div>
+                                    <span>考公的那些事儿</span>
+                                    <p>嘉宾-黄昊</p>
+                                </a>
+                            </div>
+                            <!-- 模块-END -->
+                            <!-- 模块-begin -->
+                            <div class="col-xs-6 videoPart">
+                                <a href="">
+                                    <!-- 视频框 -->
+                                    <div class="rVideo">
+                                        <img src="images/video/图层937.png" class="imgResponsive" alt="">
+                                        <div class="imageBottom">
+                                            <span>112期</span>
+                                            <p>02:05:45</p>
+                                        </div>
+                                        <div class="clean"></div>
+                                    </div>
+                                    <div class="newIco">
+                                        <p>New</p>
+                                    </div>
+                                    <span>考公的那些事儿</span>
+                                    <p>嘉宾-黄昊</p>
+                                </a>
+                            </div>
+                            <!-- 模块-END -->
+                            <!-- 模块-begin -->
+                            <div class="col-xs-6 videoPart">
+                                <a href="">
+                                    <!-- 视频框 -->
+                                    <div class="rVideo">
+                                        <img src="images/video/图层937.png" class="imgResponsive" alt="">
+                                        <div class="imageBottom">
+                                            <span>112期</span>
+                                            <p>02:05:45</p>
+                                        </div>
+                                        <div class="clean"></div>
+                                    </div>
+                                    <div class="newIco">
+                                        <p>New</p>
+                                    </div>
+                                    <span>考公的那些事儿</span>
+                                    <p>嘉宾-黄昊</p>
+                                </a>
+                            </div>
+                            <!-- 模块-END -->
+                            <!-- 模块-begin -->
+                            <div class="col-xs-6 videoPart">
+                                <a href="">
+                                    <!-- 视频框 -->
+                                    <div class="rVideo">
+                                        <img src="images/video/图层937.png" class="imgResponsive" alt="">
+                                        <div class="imageBottom">
+                                            <span>112期</span>
+                                            <p>02:05:45</p>
+                                        </div>
+                                        <div class="clean"></div>
+                                    </div>
+                                    <div class="newIco">
+                                        <p>New</p>
+                                    </div>
+                                    <span>考公的那些事儿</span>
+                                    <p>嘉宾-黄昊</p>
+                                </a>
+                            </div>
+                            <!-- 模块-END -->
+                        </div>
+                    </div>
+                    <!-- 讲座现场-END -->
+                    <!-- 精彩短片-begin -->
+                    <div class="col-xs-12 phMarginB">
+                        <!-- 标题-begin -->
+                        <ul class="phPartTitle">
+                            <li>
+                                <img src="images/video/2i.png" alt="">
+                            </li>
+                            <li>
+                                <span>精彩短片</span>
+                            </li> <li>
+                            <a href="" class="more">更多&nbsp;></a>
+                            </li>
+                        </ul>
+                        <!-- 标题-END -->
+                        <!-- 栏目块-begin -->
+                        <div class="row ">
+                            <!-- 模块-begin -->
+                            <div class="col-xs-6 videoPart">
+                                <a href="">
+                                    <!-- 视频框 -->
+                                    <div class="rVideo">
+                                        <img src="images/video/图层937.png" class="imgResponsive" alt="">
+                                        <div class="imageBottom">
+                                            <span>112期</span>
+                                            <p>02:05:45</p>
+                                        </div>
+                                        <!-- <div class="clean"></div> -->
+                                    </div>
+                                    <div class="newIco">
+                                        <p>New</p>
+                                    </div>
+                                    <span>考公的那些事儿</span>
+                                    <p>嘉宾-黄昊</p>
+                                </a>
+                            </div>
+                            <!-- 模块-END -->
+                        </div>
+                    </div>
+                    <!-- 精彩短片-END -->
+                    <!-- 莞青杂烩-begin -->
+                    <div class="col-xs-12">
+                        <!-- 标题-begin -->
+                        <ul class="phPartTitle">
+                            <li>
+                                <img src="images/video/3i.jpg" alt="">
+                            </li>
+                            <li>
+                                <span>莞青杂烩</span>
+                            </li>
+                            <li>
+                                <a href="" class="more">更多&nbsp;></a>
+                            </li>
+                        </ul>
+                        <!-- 标题-END -->
+                        <!-- 栏目块-begin -->
+                        <div class="row ">
+                            <!-- 模块-begin -->
+                            <div class="col-xs-6 videoPart">
+                                <a href="">
+                                    <!-- 视频框 -->
+                                    <div class="rVideo">
+                                        <img src="images/video/图层937.png" class="imgResponsive" alt="">
+                                        <div class="imageBottom">
+                                            <span>112期</span>
+                                            <p>02:05:45</p>
+                                        </div>
+                                        <!-- <div class="clean"></div> -->
+                                    </div>
+                                    <div class="newIco">
+                                        <p>New</p>
+                                    </div>
+                                    <span>考公的那些事儿</span>
+                                    <p>嘉宾-黄昊</p>
+                                </a>
+                            </div>
+                            <!-- 模块-END -->
+                        </div>
+                    </div>
+                    <!-- 莞青杂烩-END -->
+                </div>
+                <!-- 视频栏 - phone端 -END -->
+            </div>         
+        </div>
+        <!-- 视频模块End -->
+        <!-- 资讯模块Begin -->
+        <div class="container-fluid containerFluidInfo" id="informationZone">
+            <div class="container">
+                <div class="row infoRow">           
+                    <div class=" title hidden-xs" >
+                        <img src="images/yugao/资讯145-28px.png "  alt=""  class="titleImg"> 
+                        <!-- 更多 -->
+                        <!-- <a href=""><div id="info_more"  class="info_more">更多 <span>></span></div></a>   -->
+                        <a href="" class="infoMore">更多 <span>></span></a>
+                    </div>
+                    
+                    <div class="infoPhone visible-xs">               
+                        <ul class="videoTitle visible-xs">
+                            <li>
+                                <h3>资讯专区</h3>
+                            </li>
+                            <li>
+                                <p>
+                                    ———<span>INFO ZONE</span>———
+                                </p >
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- 预告模块Begin -->               
+                    <div class="col-lg-4 col-sm-4  notice  hidden-xs">
+                        <img src="images/yugao/yugao.png" alt="" class="img-responsive img2">    
+                        <div class="noticeImg">                    
+                            <img src="images/yugao/bg拷贝3.png" alt="" class="img-responsive img1">                       
+                        </div>
+                        <div class=" clean"></div>
+                        <div class="noticeTitleImg">                       
+                            <!-- 时间标签-Begin -->
+                            <div class="timeOut1">
+                                <div class="timeIn1">
+                                    <h4 class="vDay1">20</h4>
+                                    <h5 class="vMonth1">Nov</h5>
+                                </div>
+                            </div>
+                            <!-- 时间标签-END -->              
+                            <p class="noticeTopTitle">113期 | 王宇民</p>
+                            <a href="" class="noticeTitle"><p >影视文化传创作分享会</p></a>
+                        </div>
+                        <img src="images/yugao/矩形928.png" alt="">
+                        <div class="noticeAddr">
+                            <img src="images/yugao/i6.png" alt="">
+                            <p>莞城学术报告厅</p>
+                        </div>
+                        <p class="noticeContent">笔端，勾起往昔岁月；剧幕，演绎世情圆缺。戏里戏外，几许花开花落；或喜或悲，多少浪漫情怀。造物者，谱就万象迭更；创作者，点缀翡翠人生。</p>
+                        <a href="">
+                            <div class="comments">
+                                <img src="images/yugao/1观看12_9px.png" alt="观看" class="guankan"> 1212
+                                <img src="images/yugao/1评论12_12px.png" alt="评论" class="pinglun"> 12
+                                <img src="images/yugao/i点赞.png" alt="点赞"> 20
+                            </div>
+                        </a> 
+                    </div>
+                    <!-- 预告模块Phone端 -->
+                    <div class="col-xs-12 noticeSmall visible-xs">
+                        <div class="row">
+                            <div class="col-xs-9 noticeTitleSmall">   
+                                <img src="images/yugao/i7.png" alt="讲座预告" >
+                                <span class="">&nbsp;讲座预告</span>
+                            </div>
+                            <div class="col-xs-2 noticeTitleSmall"><a href="">11/12</a></div>
+                        </div>
+                        <div class="row contentSmall">
+                            <div class="col-xs-3"><img src="images/yugao/tu.png" alt="预告" class="img-responsive"></div>
+                            <div class="col-xs-9 contents">
+                                <h5>黄昊&程宇《考公那些事儿》</h5>
+                                <p>笔端，勾起往昔岁月；剧幕，演绎世情圆缺。戏里戏外，几许花开花落；或喜或悲，多少浪漫情怀。造物者，谱就万象迭更；创作者，点缀翡翠人生。</p>
+                            </div>
+                            <div class="right addrSmall">
+                                <img src="images/yugao/i6.png" alt="地址"> 莞城学术报告厅
+                            </div>
+                        </div>                   
+                    </div><!-- 预告模块Phone端End -->   
+                    <!-- 讲座回顾模块Begin -->
+                    <div class=" hidden-xs col-lg-8 col-sm-8 lectRow">    
+                        <div class="row ">              
+                            <div class="col-lg-12 col-sm-12 lectureRow">                   
+                                <div class="col-lg-6 col-sm-6 lectureReview" id="lectureReview">                    
+                                    <img src="images/yugao/i7.png" alt="">
+                                    <div class="titleReview"> &nbsp;讲座回顾</div>
+                                    <div class="row">
+                                        <div class="col-lg-5 col-sm-5 title1" id="title1"><a href="">112期 | 王宇民<br>影视文化创作分享会</a></div>
+                                        <div class="col-lg-4 col-sm-5   reciewImg"><img src="images/yugao/z_1.png" alt="" class="img-responsive"></div>
+                                        <div class="col-lg-11 col-sm-11 reciewContent"><p>在讲座开始前，即9月28日上午，王宇民老师与张晓芸老师在松山湖区学术会议中心一楼举办了一场主题为“编剧创作”的小型沙龙。张晓芸老师给我们讲解了编创作的两...</p></div>
+                                    </div>
+                                    <a href="">
+                                        <div class="comments">
+                                            <img src="images/yugao/1观看12_9px.png" alt="观看" class="guankan"> 1212
+                                            <img src="images/yugao/1评论12_12px.png" alt="评论" class="pinglun"> 12
+                                            <img src="images/yugao/i点赞.png" alt="点赞"> 20
+                                        </div>
+                                    </a>                       
+                                </div>
+                                <div class="col-lg-6 col-sm-6 lectureReview lectureReview1" id="lectureReview">                    
+                                    <img src="images/yugao/i7.png" alt="">
+                                    <div class="titleReview"> &nbsp;讲座回顾</div>
+                                    <div class="row">
+                                        <div class="col-lg-5 col-sm-5 title1" id="title1"><a href="">特别期 | 胡夏&后弦<br>2017弦音乐动，青春一夏</a></div>
+                                        <div class="col-lg-4 col-sm-5  reciewImg"><img src="images/yugao/z_1.png" alt="" class="img-responsive"></div>
+                                        <div class="col-lg-11 col-sm-11 reciewContent"><p>2017年3月31日，第108期莞青讲座《非凡任务》电影分享会与莞工学子于大礼堂如约相见。电影四位主创麦兆辉、潘耀明、肖聪、邢佳栋做客《莞工青年论坛》，同学们分...</p></div>
+                                    </div>
+                                    <a href="">
+                                        <div class="comments">
+                                            <img src="images/yugao/1观看12_9px.png" alt="观看" class="guankan"> 1212
+                                            <img src="images/yugao/1评论12_12px.png" alt="评论" class="pinglun"> 12
+                                            <img src="images/yugao/i点赞.png" alt="点赞"> 20
+                                        </div>
+                                    </a>                       
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12 col-sm-12 lectureRow">                   
+                                <div class="col-lg-6 col-sm-6 lectureReview " id="lectureReview">                    
+                                    <img src="images/yugao/i7.png" alt="">
+                                    <div class="titleReview"> &nbsp;讲座回顾</div>
+                                    <div class="row ">
+                                        <div class="col-lg-5 col-sm-5 title1" id="title1"><a href="">108期 | 麦兆辉<br>《非凡任务》电影分享会</a></div>
+                                        <div class="col-lg-4 col-sm-5  reciewImg"><img src="images/yugao/z_1.png" alt="" class="img-responsive"></div>
+                                        <div class="col-lg-11 col-sm-11 reciewContent"><p>2017年3月31日，第108期莞青讲座《非凡任务》电影分享会与莞工学子于大礼堂如约相见。电影四位主创麦兆辉、潘耀明、肖聪、邢佳栋做客《莞工青年论坛》，同学们分...</p></div>
+                                    </div>
+                                    <a href="">
+                                        <div class="comments">
+                                            <img src="images/yugao/1观看12_9px.png" alt="观看" class="guankan"> 1212
+                                            <img src="images/yugao/1评论12_12px.png" alt="评论" class="pinglun"> 12
+                                            <img src="images/yugao/i点赞.png" alt="点赞"> 20
+                                        </div>
+                                    </a>                        
+                                </div>
+                                <div class="col-lg-6 col-sm-6 lectureReview lectureReview1" id="lectureReview">                    
+                                    <img src="images/yugao/i8.png" alt="">
+                                    <div class="titleReview"> &nbsp;莞青杂烩</div>
+                                    <div class="row">
+                                        <div class="col-lg-5 col-sm-5 title1" id="title1"><a href="">你好，VIP ！<br>莞青会员招新啦~</a></div>
+                                        <div class="col-lg-4 col-sm-5  reciewImg"><img src="images/yugao/z_2.png" alt="" class="img-responsive"></div>
+                                        <div class="col-lg-11 col-sm-11 reciewContent"><p>2017年3月31日，第108期莞青讲座《非凡任务》电影分享会与莞工学子于大礼堂如约相见。电影四位主创麦兆辉、潘耀明、肖聪、邢佳栋做客《莞工青年论坛》，同学们分...</p></div>
+                                    </div>
+                                    <a href="">
+                                        <div class="comments">
+                                            <img src="images/yugao/1观看12_9px.png" alt="观看" class="guankan"> 1212
+                                            <img src="images/yugao/1评论12_12px.png" alt="评论" class="pinglun"> 12
+                                            <img src="images/yugao/i点赞.png" alt="点赞"> 20
+                                        </div>
+                                    </a>                       
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 讲座回顾模块End -->
+                    </div>
+                    <!-- 回顾模块phone端 -->
+                    <div class=" visible-xs">
+                        <div class="col-xs-12 noticeSmall visible-xs">
+                            <div class="row">
+                                <div class="col-xs-9 noticeTitleSmall">   
+                                    <img src="images/yugao/i7.png" alt="讲座回顾">
+                                    <span class="">&nbsp;讲座回顾</span>
+                                </div>
+                                
+                            </div>
+                            <div class="row contentlistSmall">
+                                <div class="col-xs-3"><img src="images/yugao/z_5.png" alt="预告" class="img-responsive"></div>
+                                <div class="col-xs-9 contents">
+                                    <h5>黄昊&程宇《考公那些事儿》</h5>
+                                    <p><img src="images/yugao/时间.png" alt=""> 11-02
+                                        <span><img src="images/yugao/观看.png" alt=""> 320</span>
+                                    </p>                           
+                                </div>                       
+                            </div>   
+                            <hr>
+                            <div class="row contentlistSmall">
+                                <div class="col-xs-3"><img src="images/yugao/z_3.png" alt="预告" class="img-responsive"></div>
+                                <div class="col-xs-9 contents">
+                                    <h5>黄昊&程宇《考公那些事儿》</h5>
+                                    <p><img src="images/yugao/时间.png" alt=""> 11-02
+                                        <span><img src="images/yugao/观看.png" alt=""> 320</span>
+                                    </p>                           
+                                </div>                       
+                            </div>   
+                            <hr>
+                            <div class="row contentlistSmall">
+                                <div class="col-xs-3"><img src="images/yugao/z_4.png" alt="预告" class="img-responsive"></div>
+                                <div class="col-xs-9 contents">
+                                    <h5>黄昊&程宇《考公那些事儿》</h5>
+                                    <p><img src="images/yugao/时间.png" alt=""> 11-02
+                                        <span><img src="images/yugao/观看.png" alt=""> 320</span>
+                                    </p>                           
+                                </div>                       
+                            </div>              
+                        </div>
+                        <a href="">
+                            <div class="visible-xs moreColumn">更多资讯 ></div>
+                        </a>
+                    </div>
+                    <!-- 回顾模块phone端End -->
+                </div>
+            </div>
+        </div>
+        <!-- 资讯模块End -->
+         <!-- 栏目专区Begin -->
+         <div class="container-fluid containerFluid" id="columnZone">
+            <div class="container">
+                <div class="row infoRow"> 
+                    <!-- 栏目专区标题Begin -->
+                    <div class="title hidden-xs">
+                        <img src="images/lanmu/栏目166-28px.png "  alt=""  class="titleImg">
+                         <!-- 更多 -->
+                        <!-- <a href=""><div id="info_more"  class="infoMore">更多 ></div></a>  -->
+                        <a href="" class="infoMore">更多 <span>></span></a>
+                    </div>
+                   
+                    <!-- 栏目专区标题Phone端 -->
+                    <div class="infoPhone visible-xs">               
+                        <ul class="videoTitle visible-xs">
+                            <li>
+                                <h3>栏目专区</h3>
+                            </li>
+                            <li>
+                                <p>
+                                    ———<span>COLUMN ZONE</span>———
+                                </p >
+                            </li>
+                        </ul>
+                        </div>
+                    <!-- 栏目专区标题End -->
+                        
+                    <!-- 再品模块Begin -->
+                    <div class="row zaiRow">
+                        <div class="col-lg-4 col-sm-4 col-xs-12  colFour">
+                            <div class="panel panel-default panelColumn">
+                                <div class="panel-body panelBody">
+                                    <img src="images/lanmu/1.png" alt="再品" class="img-responsive">
+                                    <h5 class="text-center"><a href="">再品 | “他喜欢男人，而她是色盲”</a></h5>
+                                    <p>他们的一生，一直在追求着自由，憧憬着有颜色的世界，守护着自己的乌托邦。</p>
+                                    <div class="linkRead hidden-xs">
+                                        <a href="#">点击阅读</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 再品模块End -->
+                        <!-- 微莞电台模块Begin -->
+                        <div class="col-lg-4 col-sm-4 col-xs-12 colFour">
+                            <div class="panel panel-default panelColumn ">
+                                <div class="panel-body panelBody">
+                                    <img src="images/lanmu/2.png" alt=""  class="img-responsive">
+                                    <h5 class="text-center"><a href="">微莞电台 | 你的善良，必须有点锋芒</a></h5>
+                                    <p>真正的善意，不是一味付出，而是选择。善意里包含了许多东西，是需要我们去分辨的。</p>
+                                    <div class="linkRead hidden-xs"><a href="#">点击阅读</a></div>
+                                </div>
+                            </div>
+                        </div>   
+                        <!-- 微莞电台模块End-->
+                        <!-- 大城小事模块Begin -->       
+                        <div class="col-lg-4 col-sm-4 col-xs-12 colFour">
+                            <div class="panel panel-default panelColumn">
+                                <div class="panel-body panelBody">
+                                    <img src="images/lanmu/3.png" alt=""  class="img-responsive">
+                                    <h5 class="text-center"><a href="">大城小事 | 每个人心中都有一座城</a></h5>
+                                    <p>城市喧嚣，人要闹。有人说回不去的叫家乡。有人说到不了的叫远方。</p>
+                                    <div class="linkRead hidden-xs"><a href="#">点击阅读</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 大城小事模块End-->
+                    </div>
+                </div>
+                <a href="">
+                    <div class="visible-xs moreColumn">更多栏目 ></div>
+                </a>
+            </div>
+        </div>
+        <!-- 栏目专区End -->
+        <!-- 二维码Begin -->
+        <div class="container visible-lg hiddden-xs">
+            <div class="toTop">
+                <div class="weibo">
+                    <img src="images/footer/微博_二维码.png" class="img-responsive" alt="微博">              
+                </div>
+                <hr/>
+                
+                <div class="weixin">
+                    <a href="">
+                        <img src="images/footer/微信_二维码.png" class="img-responsive" alt="微信">
+                        <p>官方</p>
+                        <p>微信</p>
+                    </a>
+                    
+                    <div class="twoCode">
+                        <img src="images/footer/160-200.png" class="img-responsive" alt="微信">
+                    </div>
+                </div> 
+                <hr/>  
+                <div id="btn_top" title="回到顶部">
+                    <a href=""><img src="images/footer/two_back.png" alt="返回"></a>
+                </div>
+            </div> 
+        </div>  
+        <!-- 二维码End -->
+    </main>
+
+    <!-- 页脚Begin -->
+    <footer>
+        <div class="container-fluid containerFoot hidden-xs">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-sm-4  logoFoot">
+                        <img src="images/footer/logo页脚155-49.png" alt="" class="img-responsive">
+                        <hr>
+                        <div class="friendLink">友情链接：
+                        <a href="#">东莞理工学院 &nbsp;</a>
+                        <a href="#"> 蔡凡朔的轻博客</a>
+                        </div>
+                        <div class="tSupport">技术支持：莞青技术组&莞青设计组</div>
+                        <div class="tSupport">版权所有：莞青共鸣网</div>
+                    </div>
+                    <div class="col-lg-2 col-sm-2 col-lg-offset-2 col-sm-offset-2">
+                        <div class="aboutUs">关于我们<hr></div>
+                        <div class="guanQingBan"><a href="">莞青办</a></div>
+                        <div class="guanQingBan"><a href="">莞青君</a></div>
+                    </div>
+                    <div class="col-lg-2 col-sm-2 aboutCol">
+                        <div class="aboutUs">关注我们<hr></div>
+                        
+                        <div class="guanQingBan">
+                            <a href="">
+                                <img src="images/footer/微信 (1).png" alt="" class="oneHidden">
+                                <img src="images/footer/微信2.png" alt="" class="oneCode">
+                                <span class="footIcon">官方微信</span>
+                            </a>                      
+                            <div class="twoCode">
+                                <img src="images/footer/160-200.png" class="img-responsive">
+                            </div>
+                        </div>
+                        <div class="guanQingBan">
+                            <a href="">
+                                <img src="images/footer/微博 (1).png" alt="" class="oneHidden">
+                                <img src="images/footer/微博2.png" alt="" class="oneCode">
+                                <span class="footIcon">官方微博</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-sm-2  aboutCol">
+                        <div class="aboutUs">联系我们<hr></div>
+                        <div class="guanQingBan"><img src="images/footer/头像.png" alt="" ><span class="footIcon">黄泽鑫</span></div>
+                        <div class="guanQingBan"><img src="images/footer/dianhua.png" alt="" ><span class="footIcon">475710261</span></div>
+                        <div class="guanQingBan"><img src="images/footer/qq.png" alt="" ><span class="footIcon">13538354332</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 页脚Phone端 -->
+        <div class="visible-xs containerFoot ">
+            <div class="row">
+                <div class="col-xs-12">
+                    <img src="images/footer/logo_foot.png" alt="" class="img-responsive col-xs-4">
+                    <a href=""><img src="images/footer/weixinfooter.png" alt="" class=" img-responsive col-xs-2 col-xs-offset-3 weixinFooter"></a>
+                    <a href=""><img src="images/footer/weibofooter.png" alt="" class=" img-responsive col-xs-2"></a>
+                    
+                </div>
+                <p>《莞工青年论坛》办公室</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+        <script src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
+        <script>
+        $(function(){
+            $('.carousel').carousel({
+            interval: 4000
+            });
+        });
+        </script>
+    </body>
+</html>
